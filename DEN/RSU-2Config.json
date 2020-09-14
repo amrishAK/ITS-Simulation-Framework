@@ -1,0 +1,13 @@
+
+{
+	"CarlaHost":"msc-linux-sls-026",
+	"CarlaPort":2000,
+	"Port" : 3041,
+	"Type" : "RSU",
+	"CAM" : false,
+	"AsyncMode": false,
+	"ActorSpawning" : {
+		"Random" : false,
+		"SpawnLocation" : [[500.0,230.0,5.0]]
+	}
+}

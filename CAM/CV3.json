@@ -1,0 +1,19 @@
+
+{
+	"CarlaHost":"msc-linux-sls-026",
+	"CarlaPort":2000,
+	"Port" : 3033,
+	"Type" : "Vehicle",
+	"CAM" : true,
+	"AsyncMode": false,
+	"ActorSpawning" : {
+		"Random" : false,
+		"SpawnLocation" : [[0.0,350.20,0.0],[-120.0,225.20,0.0]],
+		"SpawnRadius" : 30
+	},
+	"ActorDestination" : {
+		"Random" : false,
+		"SpawnLocation" : [[650.0,200.2,0]],
+		"SpawnRadius" : 30
+	}
+}
