@@ -1,0 +1,23 @@
+\chapter{Conclusion}
+
+\section{Conclusion and Limitations}
+This dissertation presents a distributive approach for ITS simulation and implements it by designing a framework extended from the Carla Client API. It is designed based on the limitations of the current state-of-the-art ITS simulation approach. 
+
+Chapter 3 reveals that the state-of-the-art approach is designed based on the vehicular network simulation and lacks implementing distributive and real-time characteristics of the ITS. Based on the limitations, a set of requirements are created for the proposed approach. In the later part of the chapter, the design ideas of the proposed approach and compares it through a discussion.
+
+The framework developed based on the proposed design is evaluated in Chapter 5. The scope of the evaluation is to check the feasibility of the approach and flexibility provided by the framework to extend it and simulate ITS applications. The results both the scenarios are favourable to the approach indicating the motive behind designing the scenario is achieved simulating using the framework. In the end, it became evident that the approach is indeed feasible. 
+
+Though, the framework performed a distributed simulation of an extended  ITS application. It has certain limitations, they are: 
+\begin{itemize}
+    \item The distributed network to perform the simulation should be created manually. This including installing and running the framework in all client nodes, Carla simulator in the server node and CarlaViz in a client node.
+    \item The communication module can only perform single-hop communication. This is a big limitation while simulating safety application, but a workaround approach can be created by adding message handlers with certain protocols.
+    \item The performance of nodes can affect the performance of the simulation. A workaround approach is to make use of the synchronous mode of Carla server.
+\end{itemize}
+
+\section{Future work}
+The designed framework was able to perform the distributed ITS simulation and implemented the distributed and real-time characteristics of ITS. The framework is designed as a proof of concept for the approach and there are many this to be considered to improve the framework and the import things are mentioned below
+\begin{itemize}
+    \item Adding an evaluation component. The current design only provides the visualization using CarlaViz to evaluate the behaviour. Addition of performance metrics for both actors and ITS environment will improve the evaluation process.
+    \item Creating an interactive dashboard that controls the simulation environment and visualize evaluation matrices.
+    \item The communication component only supports single-hop communication. It should be improved to support various protocols.
+\end{itemize}
